@@ -1,0 +1,50 @@
+name: Security Scan
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-dast-job:
+    runs-on: ubuntu-latest
+
+    env:
+      DAST_TARGET_URL: 'https://factar.tn/'
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up JDK and Maven
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install wget
+          sudo apt-get -y install wkhtmltopdf
+
+      - name: Download and Extract ZAP
+        run: |
+          wget https://github.com/zaproxy/zaproxy/releases/download/v2.11.1/ZAP_2.11.1_Linux.tar.gz
+          mkdir zap
+          tar -xvf ZAP_2.11.1_Linux.tar.gz
+
+      - name: Run DAST
+        run: |
+          cd ZAP_2.11.1
+          ./zap.sh -cmd -quickurl $DAST_TARGET_URL -quickprogress -quickout ../zap_report.html
+          cd ..
+
+      - name: Convert HTML to PDF
+        run: wkhtmltopdf zap_report.html zap_report.pdf
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: security-report
+          path: zap_report.pdf
