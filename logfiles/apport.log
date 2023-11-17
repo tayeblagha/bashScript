@@ -1,0 +1,16 @@
+ERROR: apport (pid 1405) Mon Nov  6 09:37:47 2023: called for pid 1146, signal 4, core limit 0, dump mode 1
+ERROR: apport (pid 1405) Mon Nov  6 09:37:47 2023: executable: /usr/bin/mongod (command line "/usr/bin/mongod --config /etc/mongod.conf")
+ERROR: apport (pid 1405) Mon Nov  6 09:37:48 2023: is_closing_session(): no DBUS_SESSION_BUS_ADDRESS in environment
+ERROR: apport (pid 1405) Mon Nov  6 09:37:48 2023: apport: report /var/crash/_usr_bin_mongod.133.crash already exists and unseen, skipping to avoid disk usage DoS
+ERROR: apport (pid 1583) Mon Nov  6 14:28:49 2023: called for pid 1262, signal 4, core limit 0, dump mode 1
+ERROR: apport (pid 1583) Mon Nov  6 14:28:49 2023: executable: /usr/bin/mongod (command line "/usr/bin/mongod --config /etc/mongod.conf")
+ERROR: apport (pid 1583) Mon Nov  6 14:28:49 2023: is_closing_session(): no DBUS_SESSION_BUS_ADDRESS in environment
+ERROR: apport (pid 1583) Mon Nov  6 14:28:49 2023: apport: report /var/crash/_usr_bin_mongod.133.crash already exists and unseen, skipping to avoid disk usage DoS
+ERROR: apport (pid 1682) Tue Nov  7 02:55:21 2023: called for pid 1473, signal 4, core limit 0, dump mode 1
+ERROR: apport (pid 1682) Tue Nov  7 02:55:21 2023: executable: /usr/bin/mongod (command line "/usr/bin/mongod --config /etc/mongod.conf")
+ERROR: apport (pid 1682) Tue Nov  7 02:55:21 2023: is_closing_session(): no DBUS_SESSION_BUS_ADDRESS in environment
+ERROR: apport (pid 1682) Tue Nov  7 02:55:22 2023: wrote report /var/crash/_usr_bin_mongod.133.crash
+ERROR: apport (pid 1428) Tue Nov  7 07:59:36 2023: called for pid 1137, signal 4, core limit 0, dump mode 1
+ERROR: apport (pid 1428) Tue Nov  7 07:59:36 2023: executable: /usr/bin/mongod (command line "/usr/bin/mongod --config /etc/mongod.conf")
+ERROR: apport (pid 1428) Tue Nov  7 07:59:37 2023: is_closing_session(): no DBUS_SESSION_BUS_ADDRESS in environment
+ERROR: apport (pid 1428) Tue Nov  7 07:59:37 2023: apport: report /var/crash/_usr_bin_mongod.133.crash already exists and unseen, skipping to avoid disk usage DoS

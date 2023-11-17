@@ -1,0 +1,322 @@
+Nov  6 00:02:49 kubernetes-worker gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  6 00:02:49 kubernetes-worker gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  6 00:02:49 kubernetes-worker gdm-password]: pam_unix(gdm-password:session): session opened for user tayeb(uid=1000) by (uid=0)
+Nov  6 00:02:49 kubernetes-worker systemd-logind[742]: New session 2 of user tayeb.
+Nov  6 00:02:49 kubernetes-worker systemd: pam_unix(systemd-user:session): session opened for user tayeb(uid=1000) by (uid=0)
+Nov  6 00:02:50 kubernetes-worker gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  6 00:02:56 kubernetes-worker gnome-keyring-daemon[2193]: keyring was in an invalid or unrecognized format: /home/tayeb/.local/share/keyrings/default.keyring
+Nov  6 00:02:57 kubernetes-worker gnome-keyring-daemon[2193]: The Secret Service was already initialized
+Nov  6 00:02:57 kubernetes-worker gnome-keyring-daemon[2193]: The PKCS#11 component was already initialized
+Nov  6 00:02:59 kubernetes-worker polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.95 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  6 00:03:10 kubernetes-worker gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Nov  6 00:03:10 kubernetes-worker systemd-logind[742]: Session c1 logged out. Waiting for processes to exit.
+Nov  6 00:03:10 kubernetes-worker systemd-logind[742]: Removed session c1.
+Nov  6 00:03:10 kubernetes-worker polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.53, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  6 00:03:16 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  6 00:03:16 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  6 00:03:18 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  6 00:03:18 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  6 00:04:13 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 00:04:13 kubernetes-worker pkexec[3614]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Nov  6 00:17:01 kubernetes-worker CRON[4892]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 00:17:01 kubernetes-worker CRON[4892]: pam_unix(cron:session): session closed for user root
+Nov  6 00:58:28 kubernetes-worker polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:tayeb to gain TEMPORARY authorization for action org.fortinet.fortitray.quit for unix-process:6256:368980 [sh -c pkexec /bin/bash /opt/forticlient/stop-forticlient.sh] (owned by unix-user:tayeb)
+Nov  6 00:58:28 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 00:58:28 kubernetes-worker pkexec[6257]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/bin/bash /opt/forticlient/stop-forticlient.sh]
+Nov  6 01:17:01 kubernetes-worker CRON[7019]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 01:17:01 kubernetes-worker CRON[7019]: pam_unix(cron:session): session closed for user root
+Nov  6 01:40:27 kubernetes-worker systemd-logind[742]: System is powering down.
+Nov  6 09:37:00 kubernetes-worker systemd-logind[753]: New seat seat0.
+Nov  6 09:37:00 kubernetes-worker systemd-logind[753]: Watching system buttons on /dev/input/event2 (Power Button)
+Nov  6 09:37:00 kubernetes-worker systemd-logind[753]: Watching system buttons on /dev/input/event0 (Lid Switch)
+Nov  6 09:37:00 kubernetes-worker systemd-logind[753]: Watching system buttons on /dev/input/event1 (Power Button)
+Nov  6 09:37:00 kubernetes-worker systemd-logind[753]: Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard)
+Nov  6 09:37:00 kubernetes-worker systemd-logind[753]: Watching system buttons on /dev/input/event9 (HP WMI hotkeys)
+Nov  6 09:37:17 kubernetes-worker gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  6 09:37:18 kubernetes-worker systemd-logind[753]: New session c1 of user gdm.
+Nov  6 09:37:19 kubernetes-worker systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  6 09:37:37 kubernetes-worker ipsec_starter[1149]: Starting strongSwan 5.9.5 IPsec [starter]...
+Nov  6 09:37:41 kubernetes-worker ipsec_starter[1149]: charon (1403) started after 2520 ms
+Nov  6 09:38:08 kubernetes-worker polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.52 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  6 10:05:42 kubernetes-worker systemd-logind[753]: Operation 'sleep' finished.
+Nov  6 10:10:44 kubernetes-worker gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  6 10:10:44 kubernetes-worker gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  6 10:10:44 kubernetes-worker gdm-password]: pam_unix(gdm-password:session): session opened for user tayeb(uid=1000) by (uid=0)
+Nov  6 10:10:44 kubernetes-worker systemd-logind[753]: New session 2 of user tayeb.
+Nov  6 10:10:45 kubernetes-worker systemd: pam_unix(systemd-user:session): session opened for user tayeb(uid=1000) by (uid=0)
+Nov  6 10:10:45 kubernetes-worker gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  6 10:10:52 kubernetes-worker gnome-keyring-daemon[2499]: keyring was in an invalid or unrecognized format: /home/tayeb/.local/share/keyrings/default.keyring
+Nov  6 10:10:53 kubernetes-worker gnome-keyring-daemon[2499]: The Secret Service was already initialized
+Nov  6 10:10:53 kubernetes-worker gnome-keyring-daemon[2499]: The PKCS#11 component was already initialized
+Nov  6 10:10:55 kubernetes-worker polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.97 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  6 10:11:06 kubernetes-worker gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Nov  6 10:11:06 kubernetes-worker systemd-logind[753]: Session c1 logged out. Waiting for processes to exit.
+Nov  6 10:11:06 kubernetes-worker systemd-logind[753]: Removed session c1.
+Nov  6 10:11:06 kubernetes-worker polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.52, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  6 10:11:13 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  6 10:11:13 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  6 10:11:16 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  6 10:11:16 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  6 10:12:20 kubernetes-worker polkit-agent-helper-1[4398]: pam_unix(polkit-1:auth): authentication failure; logname= uid=1000 euid=0 tty= ruser=tayeb rhost=  user=tayeb
+Nov  6 10:12:29 kubernetes-worker polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:tayeb to gain TEMPORARY authorization for action org.fortinet.fortitray.quit for unix-process:4393:215708 [sh -c pkexec /bin/bash /opt/forticlient/stop-forticlient.sh] (owned by unix-user:tayeb)
+Nov  6 10:12:29 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 10:12:29 kubernetes-worker pkexec[4394]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/bin/bash /opt/forticlient/stop-forticlient.sh]
+Nov  6 10:12:47 kubernetes-worker dbus-daemon[2497]: [session uid=1000 pid=2497] Failed to activate service 'org.freedesktop.Tracker3.Miner.Files': timed out (service_start_timeout=120000ms)
+Nov  6 10:13:03 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 10:13:03 kubernetes-worker pkexec[4553]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Nov  6 10:15:38 kubernetes-worker gnome-keyring-daemon[2499]: asked to register item /org/freedesktop/secrets/collection/login/2, but it's already registered
+Nov  6 10:17:01 kubernetes-worker CRON[5583]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 10:17:01 kubernetes-worker CRON[5583]: pam_unix(cron:session): session closed for user root
+Nov  6 10:30:00 kubernetes-worker CRON[5655]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 10:30:00 kubernetes-worker CRON[5655]: pam_unix(cron:session): session closed for user root
+Nov  6 10:50:54 kubernetes-worker systemd-logind[753]: Operation 'sleep' finished.
+Nov  6 10:57:19 kubernetes-worker gdm-password]: gkr-pam: unlocked login keyring
+Nov  6 11:17:01 kubernetes-worker CRON[6440]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 11:17:01 kubernetes-worker CRON[6440]: pam_unix(cron:session): session closed for user root
+Nov  6 11:30:01 kubernetes-worker CRON[6604]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 11:30:01 kubernetes-worker CRON[6604]: pam_unix(cron:session): session closed for user root
+Nov  6 11:32:26 kubernetes-worker gnome-keyring-daemon[2499]: asked to register item /org/freedesktop/secrets/collection/login/2, but it's already registered
+Nov  6 11:56:41 kubernetes-worker systemd-logind[753]: Watching system buttons on /dev/input/event17 (Pro4 (AVRCP))
+Nov  6 12:03:30 kubernetes-worker systemd-logind[753]: Watching system buttons on /dev/input/event17 (Pro4 (AVRCP))
+Nov  6 12:17:01 kubernetes-worker CRON[11758]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 12:17:01 kubernetes-worker CRON[11758]: pam_unix(cron:session): session closed for user root
+Nov  6 12:30:01 kubernetes-worker CRON[12116]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 12:30:01 kubernetes-worker CRON[12116]: pam_unix(cron:session): session closed for user root
+Nov  6 12:35:55 kubernetes-worker systemd-logind[753]: Watching system buttons on /dev/input/event17 (Pro4 (AVRCP))
+Nov  6 14:09:04 kubernetes-worker dbus-daemon[716]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.7" (uid=0 pid=714 comm="/usr/lib/bluetooth/bluetoothd " label="unconfined") interface="(unset)" member="(unset)" error name="org.freedesktop.DBus.Error.UnknownObject" requested_reply="0" destination=":1.204" (uid=1000 pid=10605 comm="gnome-control-center bluetooth " label="unconfined")
+Nov  6 14:09:04 kubernetes-worker dbus-daemon[716]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.7" (uid=0 pid=714 comm="/usr/lib/bluetooth/bluetoothd " label="unconfined") interface="(unset)" member="(unset)" error name="org.freedesktop.DBus.Error.UnknownObject" requested_reply="0" destination=":1.204" (uid=1000 pid=10605 comm="gnome-control-center bluetooth " label="unconfined")
+Nov  6 14:09:05 kubernetes-worker systemd-logind[753]: Operation 'sleep' finished.
+Nov  6 14:09:07 kubernetes-worker systemd-logind[753]: Watching system buttons on /dev/input/event17 (Pro4 (AVRCP))
+Nov  6 14:09:54 kubernetes-worker CRON[14804]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 14:09:54 kubernetes-worker CRON[14804]: pam_unix(cron:session): session closed for user root
+Nov  6 14:11:47 kubernetes-worker gdm-password]: gkr-pam: unlocked login keyring
+Nov  6 14:17:01 kubernetes-worker CRON[15046]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 14:17:01 kubernetes-worker CRON[15046]: pam_unix(cron:session): session closed for user root
+Nov  6 14:26:43 kubernetes-worker systemd-logind[753]: System is rebooting.
+Nov  6 14:27:57 kubernetes-worker systemd-logind[751]: New seat seat0.
+Nov  6 14:27:57 kubernetes-worker systemd-logind[751]: Watching system buttons on /dev/input/event2 (Power Button)
+Nov  6 14:27:57 kubernetes-worker systemd-logind[751]: Watching system buttons on /dev/input/event0 (Lid Switch)
+Nov  6 14:27:57 kubernetes-worker systemd-logind[751]: Watching system buttons on /dev/input/event1 (Power Button)
+Nov  6 14:27:57 kubernetes-worker systemd-logind[751]: Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard)
+Nov  6 14:27:57 kubernetes-worker systemd-logind[751]: Watching system buttons on /dev/input/event9 (HP WMI hotkeys)
+Nov  6 14:28:14 kubernetes-worker gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  6 14:28:16 kubernetes-worker systemd-logind[751]: New session c1 of user gdm.
+Nov  6 14:28:17 kubernetes-worker systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  6 14:28:39 kubernetes-worker ipsec_starter[1263]: Starting strongSwan 5.9.5 IPsec [starter]...
+Nov  6 14:28:42 kubernetes-worker ipsec_starter[1263]: charon (1555) started after 2580 ms
+Nov  6 14:29:08 kubernetes-worker polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.53 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  6 14:29:20 kubernetes-worker gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  6 14:29:20 kubernetes-worker gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  6 14:29:20 kubernetes-worker gdm-password]: pam_unix(gdm-password:session): session opened for user tayeb(uid=1000) by (uid=0)
+Nov  6 14:29:21 kubernetes-worker systemd-logind[751]: New session 2 of user tayeb.
+Nov  6 14:29:21 kubernetes-worker systemd: pam_unix(systemd-user:session): session opened for user tayeb(uid=1000) by (uid=0)
+Nov  6 14:29:23 kubernetes-worker gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  6 14:29:31 kubernetes-worker gnome-keyring-daemon[2068]: keyring was in an invalid or unrecognized format: /home/tayeb/.local/share/keyrings/default.keyring
+Nov  6 14:29:32 kubernetes-worker gnome-keyring-daemon[2068]: The Secret Service was already initialized
+Nov  6 14:29:32 kubernetes-worker gnome-keyring-daemon[2068]: The PKCS#11 component was already initialized
+Nov  6 14:29:36 kubernetes-worker polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.93 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  6 14:29:46 kubernetes-worker gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Nov  6 14:29:46 kubernetes-worker systemd-logind[751]: Session c1 logged out. Waiting for processes to exit.
+Nov  6 14:29:46 kubernetes-worker systemd-logind[751]: Removed session c1.
+Nov  6 14:29:46 kubernetes-worker polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.53, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  6 14:29:53 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  6 14:29:53 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  6 14:29:55 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  6 14:29:55 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  6 14:30:00 kubernetes-worker CRON[3110]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 14:30:00 kubernetes-worker CRON[3110]: pam_unix(cron:session): session closed for user root
+Nov  6 14:30:07 kubernetes-worker polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:tayeb to gain TEMPORARY authorization for action org.fortinet.fortitray.quit for unix-process:3097:17368 [sh -c pkexec /bin/bash /opt/forticlient/stop-forticlient.sh] (owned by unix-user:tayeb)
+Nov  6 14:30:07 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 14:30:07 kubernetes-worker pkexec[3098]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/bin/bash /opt/forticlient/stop-forticlient.sh]
+Nov  6 14:31:26 kubernetes-worker dbus-daemon[2038]: [session uid=1000 pid=2038] Failed to activate service 'org.freedesktop.Tracker3.Miner.Files': timed out (service_start_timeout=120000ms)
+Nov  6 14:31:34 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 14:31:34 kubernetes-worker pkexec[4190]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Nov  6 15:09:11 kubernetes-worker systemd-logind[751]: Power key pressed.
+Nov  6 15:15:34 kubernetes-worker systemd-logind[751]: Power key pressed.
+Nov  6 15:17:01 kubernetes-worker CRON[5892]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 15:17:01 kubernetes-worker CRON[5892]: pam_unix(cron:session): session closed for user root
+Nov  6 15:17:05 kubernetes-worker gdm-password]: gkr-pam: unlocked login keyring
+Nov  6 15:30:01 kubernetes-worker CRON[7157]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 15:30:01 kubernetes-worker CRON[7157]: pam_unix(cron:session): session closed for user root
+Nov  6 15:30:02 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  6 15:30:02 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  6 15:30:02 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  6 15:30:02 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  6 15:30:54 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  6 15:30:54 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  6 15:30:56 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  6 15:30:56 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  6 15:31:42 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 15:31:42 kubernetes-worker pkexec[11809]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Nov  6 15:33:45 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 15:33:45 kubernetes-worker pkexec[11997]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Nov  6 16:17:01 kubernetes-worker CRON[12749]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 16:17:01 kubernetes-worker CRON[12749]: pam_unix(cron:session): session closed for user root
+Nov  6 16:22:20 kubernetes-worker gdm-password]: gkr-pam: unlocked login keyring
+Nov  6 16:30:01 kubernetes-worker CRON[12906]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 16:30:01 kubernetes-worker CRON[12906]: pam_unix(cron:session): session closed for user root
+Nov  6 16:44:02 kubernetes-worker gdm-password]: gkr-pam: unlocked login keyring
+Nov  6 17:17:01 kubernetes-worker CRON[14420]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 17:17:01 kubernetes-worker CRON[14420]: pam_unix(cron:session): session closed for user root
+Nov  6 18:11:31 kubernetes-worker CRON[14627]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 18:11:31 kubernetes-worker CRON[14627]: pam_unix(cron:session): session closed for user root
+Nov  6 18:11:31 kubernetes-worker systemd-logind[751]: Operation 'sleep' finished.
+Nov  6 18:13:56 kubernetes-worker gdm-password]: gkr-pam: unlocked login keyring
+Nov  6 18:17:01 kubernetes-worker CRON[15339]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 18:17:01 kubernetes-worker CRON[15339]: pam_unix(cron:session): session closed for user root
+Nov  6 18:30:01 kubernetes-worker CRON[16472]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 18:30:01 kubernetes-worker CRON[16472]: pam_unix(cron:session): session closed for user root
+Nov  6 18:34:40 kubernetes-worker sudo:    tayeb : TTY=pts/1 ; PWD=/home/tayeb/Desktop/bashScripting ; USER=root ; COMMAND=/usr/bin/apt install htop
+Nov  6 18:34:40 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 18:34:42 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:47:15 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 18:47:15 kubernetes-worker pkexec[18134]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Nov  6 18:52:32 kubernetes-worker sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/1 ruser=tayeb rhost=  user=tayeb
+Nov  6 18:52:44 kubernetes-worker sudo:    tayeb : TTY=pts/1 ; PWD=/home/tayeb/Desktop/bashScripting ; USER=root ; COMMAND=/usr/bin/apt install htop
+Nov  6 18:52:44 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 18:52:45 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:53:29 kubernetes-worker sudo:    tayeb : TTY=pts/1 ; PWD=/home/tayeb/Desktop/bashScripting ; USER=root ; COMMAND=/usr/bin/apt install htop
+Nov  6 18:53:29 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 18:53:31 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:53:49 kubernetes-worker sudo:    tayeb : TTY=pts/1 ; PWD=/home/tayeb/Desktop/bashScripting ; USER=root ; COMMAND=/usr/bin/apt install htop
+Nov  6 18:53:49 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 18:53:51 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 18:56:30 kubernetes-worker sudo:    tayeb : TTY=pts/1 ; PWD=/home/tayeb/Desktop/bashScripting ; USER=root ; COMMAND=/usr/bin/apt install htop
+Nov  6 18:56:30 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 18:56:31 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root
+Nov  6 19:11:22 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  6 19:11:22 kubernetes-worker pkexec[19709]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Nov  6 19:17:02 kubernetes-worker CRON[19878]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  6 19:17:02 kubernetes-worker CRON[19878]: pam_unix(cron:session): session closed for user root
+Nov  6 19:17:32 kubernetes-worker systemd-logind[751]: System is rebooting.
+Nov  7 02:54:14 kubernetes-worker systemd-logind[745]: New seat seat0.
+Nov  7 02:54:14 kubernetes-worker systemd-logind[745]: Watching system buttons on /dev/input/event2 (Power Button)
+Nov  7 02:54:14 kubernetes-worker systemd-logind[745]: Watching system buttons on /dev/input/event0 (Lid Switch)
+Nov  7 02:54:14 kubernetes-worker systemd-logind[745]: Watching system buttons on /dev/input/event1 (Power Button)
+Nov  7 02:54:14 kubernetes-worker systemd-logind[745]: Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard)
+Nov  7 02:54:14 kubernetes-worker systemd-logind[745]: Watching system buttons on /dev/input/event9 (HP WMI hotkeys)
+Nov  7 02:54:31 kubernetes-worker gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  7 02:54:31 kubernetes-worker systemd-logind[745]: New session c1 of user gdm.
+Nov  7 02:54:32 kubernetes-worker systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  7 02:55:16 kubernetes-worker ipsec_starter[1474]: Starting strongSwan 5.9.5 IPsec [starter]...
+Nov  7 02:55:18 kubernetes-worker ipsec_starter[1474]: charon (1642) started after 1580 ms
+Nov  7 02:55:19 kubernetes-worker polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.47 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  7 02:55:36 kubernetes-worker gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  7 02:55:36 kubernetes-worker gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  7 02:55:36 kubernetes-worker gdm-password]: pam_unix(gdm-password:session): session opened for user tayeb(uid=1000) by (uid=0)
+Nov  7 02:55:36 kubernetes-worker systemd-logind[745]: New session 2 of user tayeb.
+Nov  7 02:55:36 kubernetes-worker systemd: pam_unix(systemd-user:session): session opened for user tayeb(uid=1000) by (uid=0)
+Nov  7 02:55:37 kubernetes-worker gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  7 02:55:46 kubernetes-worker gnome-keyring-daemon[2045]: keyring was in an invalid or unrecognized format: /home/tayeb/.local/share/keyrings/default.keyring
+Nov  7 02:55:47 kubernetes-worker gnome-keyring-daemon[2045]: The Secret Service was already initialized
+Nov  7 02:55:47 kubernetes-worker gnome-keyring-daemon[2045]: The PKCS#11 component was already initialized
+Nov  7 02:55:49 kubernetes-worker polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.92 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  7 02:56:01 kubernetes-worker gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Nov  7 02:56:01 kubernetes-worker polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.47, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  7 02:56:01 kubernetes-worker systemd-logind[745]: Session c1 logged out. Waiting for processes to exit.
+Nov  7 02:56:01 kubernetes-worker systemd-logind[745]: Removed session c1.
+Nov  7 02:56:22 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  7 02:56:22 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  7 02:56:25 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  7 02:56:25 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  7 02:56:29 kubernetes-worker polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:tayeb to gain TEMPORARY authorization for action org.fortinet.fortitray.quit for unix-process:3171:18270 [sh -c pkexec /bin/bash /opt/forticlient/stop-forticlient.sh] (owned by unix-user:tayeb)
+Nov  7 02:56:29 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  7 02:56:29 kubernetes-worker pkexec[3172]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/bin/bash /opt/forticlient/stop-forticlient.sh]
+Nov  7 02:57:42 kubernetes-worker dbus-daemon[2037]: [session uid=1000 pid=2037] Failed to activate service 'org.freedesktop.Tracker3.Miner.Files': timed out (service_start_timeout=120000ms)
+Nov  7 02:59:43 kubernetes-worker dbus-daemon[2037]: [session uid=1000 pid=2037] Failed to activate service 'org.freedesktop.Tracker3.Miner.Files': timed out (service_start_timeout=120000ms)
+Nov  7 03:10:01 kubernetes-worker CRON[5927]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  7 03:10:01 kubernetes-worker CRON[5927]: pam_unix(cron:session): session closed for user root
+Nov  7 03:17:01 kubernetes-worker CRON[5978]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  7 03:17:01 kubernetes-worker CRON[5978]: pam_unix(cron:session): session closed for user root
+Nov  7 04:17:01 kubernetes-worker CRON[8068]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  7 04:17:01 kubernetes-worker CRON[8068]: pam_unix(cron:session): session closed for user root
+Nov  7 04:52:36 kubernetes-worker systemd-logind[745]: System is powering down.
+Nov  7 07:58:52 kubernetes-worker systemd-logind[751]: New seat seat0.
+Nov  7 07:58:52 kubernetes-worker systemd-logind[751]: Watching system buttons on /dev/input/event2 (Power Button)
+Nov  7 07:58:52 kubernetes-worker systemd-logind[751]: Watching system buttons on /dev/input/event0 (Lid Switch)
+Nov  7 07:58:52 kubernetes-worker systemd-logind[751]: Watching system buttons on /dev/input/event1 (Power Button)
+Nov  7 07:58:52 kubernetes-worker systemd-logind[751]: Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard)
+Nov  7 07:58:52 kubernetes-worker systemd-logind[751]: Watching system buttons on /dev/input/event9 (HP WMI hotkeys)
+Nov  7 07:59:09 kubernetes-worker gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  7 07:59:10 kubernetes-worker systemd-logind[751]: New session c1 of user gdm.
+Nov  7 07:59:12 kubernetes-worker systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  7 07:59:26 kubernetes-worker ipsec_starter[1138]: Starting strongSwan 5.9.5 IPsec [starter]...
+Nov  7 07:59:31 kubernetes-worker ipsec_starter[1138]: charon (1369) started after 4280 ms
+Nov  7 07:59:59 kubernetes-worker polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.51 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  7 08:00:37 kubernetes-worker gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=tayeb
+Nov  7 08:00:43 kubernetes-worker gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=tayeb
+Nov  7 08:01:07 kubernetes-worker gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=tayeb
+Nov  7 08:01:28 kubernetes-worker gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  7 08:01:28 kubernetes-worker gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  7 08:01:28 kubernetes-worker gdm-password]: pam_unix(gdm-password:session): session opened for user tayeb(uid=1000) by (uid=0)
+Nov  7 08:01:28 kubernetes-worker systemd-logind[751]: New session 2 of user tayeb.
+Nov  7 08:01:28 kubernetes-worker systemd: pam_unix(systemd-user:session): session opened for user tayeb(uid=1000) by (uid=0)
+Nov  7 08:01:29 kubernetes-worker gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  7 08:01:36 kubernetes-worker gnome-keyring-daemon[2135]: keyring was in an invalid or unrecognized format: /home/tayeb/.local/share/keyrings/default.keyring
+Nov  7 08:01:37 kubernetes-worker gnome-keyring-daemon[2135]: The Secret Service was already initialized
+Nov  7 08:01:37 kubernetes-worker gnome-keyring-daemon[2135]: The PKCS#11 component was already initialized
+Nov  7 08:01:39 kubernetes-worker polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.96 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  7 08:01:51 kubernetes-worker gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Nov  7 08:01:51 kubernetes-worker systemd-logind[751]: Session c1 logged out. Waiting for processes to exit.
+Nov  7 08:01:51 kubernetes-worker systemd-logind[751]: Removed session c1.
+Nov  7 08:01:51 kubernetes-worker polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.51, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  7 08:01:57 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  7 08:01:57 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  7 08:01:59 kubernetes-worker PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  7 08:01:59 kubernetes-worker PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  7 08:02:11 kubernetes-worker polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:tayeb to gain TEMPORARY authorization for action org.fortinet.fortitray.quit for unix-process:3170:24392 [sh -c pkexec /bin/bash /opt/forticlient/stop-forticlient.sh] (owned by unix-user:tayeb)
+Nov  7 08:02:11 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  7 08:02:11 kubernetes-worker pkexec[3171]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/bin/bash /opt/forticlient/stop-forticlient.sh]
+Nov  7 08:17:02 kubernetes-worker CRON[4610]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  7 08:17:02 kubernetes-worker CRON[4610]: pam_unix(cron:session): session closed for user root
+Nov  7 08:30:04 kubernetes-worker CRON[6833]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  7 08:30:04 kubernetes-worker CRON[6833]: pam_unix(cron:session): session closed for user root
+Nov  7 08:42:50 kubernetes-worker gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=tayeb
+Nov  7 08:42:58 kubernetes-worker gdm-password]: gkr-pam: unlocked login keyring
+Nov  7 08:52:54 kubernetes-worker systemd-logind[751]: Watching system buttons on /dev/input/event17 (Galaxy S6 edge (AVRCP))
+Nov  7 09:17:01 kubernetes-worker CRON[9394]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  7 09:17:01 kubernetes-worker CRON[9394]: pam_unix(cron:session): session closed for user root
+Nov  7 09:30:01 kubernetes-worker CRON[11160]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  7 09:30:01 kubernetes-worker CRON[11160]: pam_unix(cron:session): session closed for user root
+Nov  7 09:53:34 kubernetes-worker gdm-password]: gkr-pam: unlocked login keyring
+Nov  7 10:08:49 kubernetes-worker sudo:    tayeb : TTY=pts/2 ; PWD=/home/tayeb ; USER=root ; COMMAND=/usr/bin/apt update
+Nov  7 10:08:49 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  7 10:09:00 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:09:17 kubernetes-worker sudo:    tayeb : TTY=pts/2 ; PWD=/home/tayeb ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+Nov  7 10:09:17 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  7 10:09:19 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:15:39 kubernetes-worker sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=tayeb rhost=  user=tayeb
+Nov  7 10:15:45 kubernetes-worker sudo:    tayeb : TTY=pts/0 ; PWD=/home/tayeb/Desktop/bashScripting ; USER=root ; COMMAND=/usr/bin/su
+Nov  7 10:15:45 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  7 10:15:45 kubernetes-worker su: (to root) root on pts/3
+Nov  7 10:15:45 kubernetes-worker su: pam_unix(su:session): session opened for user root(uid=0) by tayeb(uid=0)
+Nov  7 10:17:01 kubernetes-worker CRON[14905]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  7 10:17:01 kubernetes-worker CRON[14905]: pam_unix(cron:session): session closed for user root
+Nov  7 10:19:23 kubernetes-worker sudo:     root : TTY=pts/3 ; PWD=/home/tayeb/Desktop/bashScripting ; USER=root ; COMMAND=/usr/bin/apt update
+Nov  7 10:19:23 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by tayeb(uid=0)
+Nov  7 10:19:34 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:19:34 kubernetes-worker sudo:     root : TTY=pts/3 ; PWD=/home/tayeb/Desktop/bashScripting ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+Nov  7 10:19:34 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by tayeb(uid=0)
+Nov  7 10:19:37 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:26:11 kubernetes-worker sudo:     root : TTY=pts/3 ; PWD=/home/tayeb/Desktop/bashScripting ; USER=root ; COMMAND=/usr/bin/apt update
+Nov  7 10:26:11 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by tayeb(uid=0)
+Nov  7 10:26:22 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:26:22 kubernetes-worker sudo:     root : TTY=pts/3 ; PWD=/home/tayeb/Desktop/bashScripting ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+Nov  7 10:26:22 kubernetes-worker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by tayeb(uid=0)
+Nov  7 10:26:25 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root
+Nov  7 10:30:01 kubernetes-worker CRON[16394]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  7 10:30:02 kubernetes-worker CRON[16394]: pam_unix(cron:session): session closed for user root
+Nov  7 10:40:11 kubernetes-worker polkit-agent-helper-1[16827]: pam_unix(polkit-1:auth): authentication failure; logname= uid=1000 euid=0 tty= ruser=tayeb rhost=  user=tayeb
+Nov  7 10:40:19 kubernetes-worker polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:tayeb to gain TEMPORARY authorization for action org.fortinet.fortitray.quit for unix-process:16823:972470 [/bin/sh -c cd "/home/tayeb"; "/usr/bin/pkexec" --disable-internal-agent /bin/bash -c "echo SUDOPROMPT; \"/snap/code/145/usr/share/code/bin/code\" --file-write \"/home/tayeb/.config/Code/code-elevated-2kT73qcz\" \"/home/tayeb/Desktop/bashScripting/forllop.sh\""] (owned by unix-user:tayeb)
+Nov  7 10:40:20 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  7 10:40:20 kubernetes-worker pkexec[16824]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/bin/bash -c echo SUDOPROMPT; "/snap/code/145/usr/share/code/bin/code" --file-write "/home/tayeb/.config/Code/code-elevated-2kT73qcz" "/home/tayeb/Desktop/bashScripting/forllop.sh"]
+Nov  7 10:41:50 kubernetes-worker polkit-agent-helper-1[16945]: pam_unix(polkit-1:auth): authentication failure; logname= uid=1000 euid=0 tty= ruser=tayeb rhost=  user=tayeb
+Nov  7 10:41:57 kubernetes-worker polkit-agent-helper-1[16949]: pam_unix(polkit-1:auth): authentication failure; logname= uid=1000 euid=0 tty= ruser=tayeb rhost=  user=tayeb
+Nov  7 10:42:05 kubernetes-worker polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:tayeb to gain TEMPORARY authorization for action org.fortinet.fortitray.quit for unix-process:16941:982417 [/bin/sh -c cd "/home/tayeb"; "/usr/bin/pkexec" --disable-internal-agent /bin/bash -c "echo SUDOPROMPT; \"/snap/code/145/usr/share/code/bin/code\" --file-write \"/home/tayeb/.config/Code/code-elevated-lC3s2KA4\" \"/home/tayeb/Desktop/bashScripting/forllop.sh\""] (owned by unix-user:tayeb)
+Nov  7 10:42:06 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  7 10:42:06 kubernetes-worker pkexec[16942]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/bin/bash -c echo SUDOPROMPT; "/snap/code/145/usr/share/code/bin/code" --file-write "/home/tayeb/.config/Code/code-elevated-lC3s2KA4" "/home/tayeb/Desktop/bashScripting/forllop.sh"]
+Nov  7 10:46:04 kubernetes-worker polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:tayeb to gain TEMPORARY authorization for action org.fortinet.fortitray.quit for unix-process:17128:1007775 [/bin/sh -c cd "/home/tayeb"; "/usr/bin/pkexec" --disable-internal-agent /bin/bash -c "echo SUDOPROMPT; \"/snap/code/145/usr/share/code/bin/code\" --file-write \"/home/tayeb/.config/Code/code-elevated-saU7Sjmj\" \"/home/tayeb/Desktop/bashScripting/forllop.sh\""] (owned by unix-user:tayeb)
+Nov  7 10:46:04 kubernetes-worker pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  7 10:46:04 kubernetes-worker pkexec[17129]: tayeb: Executing command [USER=root] [TTY=unknown] [CWD=/home/tayeb] [COMMAND=/bin/bash -c echo SUDOPROMPT; "/snap/code/145/usr/share/code/bin/code" --file-write "/home/tayeb/.config/Code/code-elevated-saU7Sjmj" "/home/tayeb/Desktop/bashScripting/forllop.sh"]
+Nov  7 10:46:17 kubernetes-worker su: pam_unix(su:session): session closed for user root
+Nov  7 10:46:17 kubernetes-worker sudo: pam_unix(sudo:session): session closed for user root

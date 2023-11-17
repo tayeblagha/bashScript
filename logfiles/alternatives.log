@@ -1,0 +1,5 @@
+update-alternatives 2023-11-03 13:31:31: run with --install /usr/bin/js js /usr/bin/nodejs 200 --slave /usr/share/man/man1/js.1.gz js.1.gz /usr/share/man/man1/nodejs.1.gz
+update-alternatives 2023-11-03 13:42:26: run with --install /etc/mysql/my.cnf my.cnf /etc/mysql/mysql.cnf 200
+update-alternatives 2023-11-06 19:20:40: run with --install /usr/bin/x-www-browser x-www-browser /usr/bin/google-chrome-stable 200
+update-alternatives 2023-11-06 19:20:41: run with --install /usr/bin/gnome-www-browser gnome-www-browser /usr/bin/google-chrome-stable 200
+update-alternatives 2023-11-06 19:20:41: run with --install /usr/bin/google-chrome google-chrome /usr/bin/google-chrome-stable 200
