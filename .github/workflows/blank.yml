@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DAST_TARGET_URL: 'https://www.rocaton.com/homepage.html'
+      DAST_TARGET_URL: 'https://www.rocaton.com/'
 
     steps:
       - name: Checkout Repository
