@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DAST_TARGET_URL: 'https://gifts.grab.com/sg/'
+      DAST_TARGET_URL: 'https://www.playstation.com/en-us/'
 
     steps:
       - name: Checkout Repository
