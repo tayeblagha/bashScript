@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DAST_TARGET_URL: 'https://www.playstation.com/en-us/'
+      DAST_TARGET_URL: 'https://my.1password.com/'
 
     steps:
       - name: Checkout Repository
