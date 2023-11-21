@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DAST_TARGET_URL: 'https://www.usaa.com/?akredirect=true'
+      DAST_TARGET_URL: 'https://www.marcus.com/'
 
     steps:
       - name: Checkout Repository
