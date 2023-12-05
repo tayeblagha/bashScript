@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DAST_TARGET_URL: 'https://logistics-eu.temu.com'
+      DAST_TARGET_URL: 'https://pornhub.com/'
 
     steps:
       - name: Checkout Repository
