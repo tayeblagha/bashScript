@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DAST_TARGET_URL: 'https://pornhub.com/'
+      DAST_TARGET_URL: 'https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F-switch-oled-model-neon-blue-and-red-white--hk-version-only-with-hk-version-charger-g-601099518006684.html&login_scene=2&refer_page_name=goods&refer_page_id=10032_1701807081677_auah9i3yao&refer_page_sn=10032&_x_sessn_id=r4i0izt8ds&no_cache_id=8hp4m'
 
     steps:
       - name: Checkout Repository
