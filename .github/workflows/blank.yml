@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DAST_TARGET_URL: 'https://trello.com/'
+      DAST_TARGET_URL: 'https://shop.tesla.com/search?searchTerm=%3Cimg%3E'
 
     steps:
       - name: Checkout Repository
