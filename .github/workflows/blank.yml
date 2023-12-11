@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DAST_TARGET_URL: 'https://opensea.io/'
+      DAST_TARGET_URL: 'https://trello.com/'
 
     steps:
       - name: Checkout Repository
